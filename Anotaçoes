@@ -1,0 +1,321 @@
+      {Criar uma tabela HTML}
+
+A tag table, representa a tabela.
+A tag tr, representa a linha da tabela.
+A tag td, representa o cabeçalho da tabela.
+A tag thead, representa o corpo da tabela.
+A tag tbody, representa a célula da tabela.
+A tag th, representa a célula do cabeçalho da tabela.
+A tag tfloot, representa o rodapé da tabela. 
+                                
+                           
+                  {CLASS E IDS}                 
+
+class= identificador múltiplo. representado por '.'
+id= identificador individual. representado no css como#
+
+                  {CORES}                   
+
+color: rgb (0,0,0) é possível editar as cores utilizando a proporção das cores primarias (red, green, blue). o valor pra cada vai de 0 até 255. 
+rgba (0, 0, 0, 0) permite editar a opacidade da cor sendo que a numeração correspondente a opacidade pode variar de 0 até 1
+color: #00aabb(ff). hexadecimal onde a numeração varia de 1 a 16, de 1 a 9 representado por númeor normais e de10 até 16 representado por letras de A a F. são duas casas pra cada cor.
+
+                   {BACKGROUND}
+
+background é um atributo que é utilizado para edição do fundo do elemento.
+
+background-color: edição de cor de fundo;
+
+background-image: url (./pasta/imagemdefundo.jpg)
+backgroud-repeat: no-repeat    (pra não repetir), pode-se editar cada eixo (X ou Y) em particular
+background-size: (para editar o tamanho)
+backgound-attachment: fixed/ scroll/ local
+background-position: a posição de preferencia
+
+*pra utilizar somente um atributo para editar as características do fundo do elemento deve-se seguir a ordem:
+color, image, position/ size, repeat, attachment
+
+                   {DIV}
+
+A div é uma tag que pode ser utilizada para selecionar uma seção dentro do documento html. pode ser utilizada com class ou id para edição de características no css.
+
+                   {FERRAMENTAS DO GOOGLE CROME}
+
+ Óla galera, com essa opção de "inspecionar" fui no google e inspecionei e vi o código fonte todo, inclusive da pra mudar algumas coisas no google pra brincar e testa o que ja aprendemos ate aqui, muito bom 
+
+                  {UNIDADES DE MEDIDAS FIXAS}
+
+unidades de medidas fixas são propriedades CSS que podem assumir valores de "comprimento". Comprimento é um número seguido por uma unidade de medida, tais como 10px, 2em, etc. podem ser editadas com id, class. sendo:
+
+cm= centimetros
+mm= milimetros
+in= polegadas (1in = 96px = 2.54cm)
+px= pixels (1px = 1/96th de 1in) pode variar de acordo com a tela
+pt= pontos (1pt = 1/72 de 1in)
+pc= picas (1pc = 12 pt)
+
+As unidades de medidas fixas são expressas exatamente com o tamanho selecionado.
+*o que pode afetar a reprodução do site em telas de resolução diferentes.
+
+Muitas propriedades CSS podem assumir valores editaveis como width, height, margin, padding, font-size
+
+               {UNIDADES DE MEDIDAS REFERENÇIA}
+
+em= relativo ao tamanho do elemento
+rem= relativo ao tamanho da fonte do elemento raiz
+vw= relativo a 1% da largura da janela de visualização 
+vw=  relativo a 1% da altura da janela de visualização 
+vmin= em relação ao menor valor de comprimento (altura ou largura)
+vmax= em relação ao maior valor de comprimento (altura ou largura)
+%= porcentagem em relação ao elemento pai
+ 
+              {MARGIN E PADDING}
+
+A margin é usada para criar espaço ao redor dos elementos, fora das bordas. Já o padding cria um espaçamento dentro das bordas do elemento.
+
+              {BORDER}
+a borda inicialmente precisa de uma largura, um estilo e uma cor pra aparecer na tela.
+*border-radius é utilizado para editar a circunferência desta.
+os lados da borda podem ser editados separadamente. (top, right, bottom e left)
+
+estilos de borda=
+dotted: pontilhada
+dashed: tracejada
+solid: solida
+none: sem borda
+hidden: escondida
+
+             {BOX MODEL}
+
+conteudo (content), preenchimento (padding), borda (border) e margem (margin).
+
+*outline é uma propriedade que não interagem com o box model, e trabalha semelhante ao border
+
+*box-sizing é utilizado para delimitar o tamanho do elemento
+
+            {AJUSTES DE TEXTO}
+
+            text-align serve para editar horizontalmente o alinhamento do texto, sendo seus atributos: right (direita ) left (esquerda é o padrão), center (centro), justify (justificado).
+
+text-transform edita a forma da letra, sendo os valores: caixa-alta (uppercase), caixa baixa (lowercase), primeira letra de cada palavra maiúscula (capitalize).
+
+text-ident: seria o espaçamento do início de um parágrafo que pode ser editado com as unidades de medidas
+
+text-decoration: sublinhado (underline), riscado (line-trought), linha em cima  (overline), os três podem ser utilizados simultaneamente.
+
+letter-spacing: espaçamento entre as letras, editado com as unidades de medidas.
+
+line-height: altura da linha, editado com as unidades de medidas 
+
+word-spacing: espaçamento entre palavras,           "                     "           .
+
+text-shadow edita o sombreamento, recebe 4 valores: deslocamento pra direita, deslocamento pra baixo, raio do desfoque e cor da sombra.
+
+             {FONTES}
+
+Basicamente existem três grande famílias genéricas de fontes: com serifa, sem serifa e monospace.
+*A serifa consiste em um pequeno traço que está presente no fim das hastes das letras. 
+*monospace é a fonte cujas letras e caracteres ocupam o mesmo espaço horizontal. Isto contrasta com as fontes de largura-variável.
+
+A propriedade font-family pode conter vários valores de fontes como um sistema de "busca". Se o navegador não suportar a primeira fonte, ele tentará a próxima fonte. cada valor adicionado é separado com vírgula.
+*Se o nome de uma fonte contiver espaço em branco, ele deve ser colocado entre aspas.
+
+Existem dois tipos de família de fontes:
+família-específica: o nome de uma família de fontes, como "times", "courier", "arial".
+família-genérica: O nome de uma família-genérica, como serif, sans-serif, cursiva, monospace.
+
+
+*a propriedade font-style permite a adição do valor pra tornar a fonte itálica.
+*a propriedade font-weight permite editar a fonte para negrito, seja adicionando o valor "bold" ou a numeração que varia de 100 a 900 (caminhando de 100 em 100)
+*a propriedade ++font-variant:"small-caps"++ permite que todas as letras fiquem maiúsculas porém respeitando a proporção original existentes entre minúsculas e maiúsculas.
+
+
+                {ESTILO DE LINK}
+               
+        
+Value	Description
+alias	The cursor indicates an alias of something is to be created
+all-scroll	The cursor indicates that something can be scrolled in any direction
+auto	Default. The browser sets a cursor
+cell	The cursor indicates that a cell (or set of cells) may be selected
+context-menu	The cursor indicates that a context-menu is available
+col-resize	The cursor indicates that the column can be resized horizontally
+copy	The cursor indicates something is to be copied
+crosshair	The cursor render as a crosshair
+default	The default cursor
+e-resize	The cursor indicates that an edge of a box is to be moved right (east)
+ew-resize	Indicates a bidirectional resize cursor
+grab	The cursor indicates that something can be grabbed
+grabbing	The cursor indicates that something can be grabbed
+help	The cursor indicates that help is available
+move	The cursor indicates something is to be moved
+n-resize	The cursor indicates that an edge of a box is to be moved up (north)
+ne-resize	The cursor indicates that an edge of a box is to be moved up and right (north/east)
+nesw-resize	Indicates a bidirectional resize cursor
+ns-resize	Indicates a bidirectional resize cursor
+nw-resize	The cursor indicates that an edge of a box is to be moved up and left (north/west)
+nwse-resize	Indicates a bidirectional resize cursor
+no-drop	The cursor indicates that the dragged item cannot be dropped here
+none	No cursor is rendered for the element
+not-allowed	The cursor indicates that the requested action will not be executed
+pointer	The cursor is a pointer and indicates a link
+progress	The cursor indicates that the program is busy (in progress)
+row-resize	The cursor indicates that the row can be resized vertically
+s-resize	The cursor indicates that an edge of a box is to be moved down (south)
+se-resize	The cursor indicates that an edge of a box is to be moved down and right (south/east)
+sw-resize	The cursor indicates that an edge of a box is to be moved down and left (south/west)
+text	The cursor indicates text that may be selected
+URL	A comma separated list of URLs to custom cursors. Note: Always specify a generic cursor at the end of the list, in case none of the URL-defined cursors can be used
+vertical-text	The cursor indicates vertical-text that may be selected
+w-resize	The cursor indicates that an edge of a box is to be moved left (west)
+wait	The cursor indicates that the program is busy
+zoom-in	The cursor indicates that something can be zoomed in
+zoom-out	The cursor indicates that something can be zoomed out
+          
+          
+            {LISTAS}
+            
+
+Value	Description
+disc	Default value. The marker is a filled circle
+armenian	The marker is traditional Armenian numbering
+circle	The marker is a circle
+cjk-ideographic	The marker is plain ideographic numbers
+decimal	The marker is a number
+decimal-leading-zero	The marker is a number with leading zeros (01, 02, 03, etc.)
+georgian	The marker is traditional Georgian numbering
+hebrew	The marker is traditional Hebrew numbering
+hiragana	The marker is traditional Hiragana numbering
+hiragana-iroha	The marker is traditional Hiragana iroha numbering
+katakana	The marker is traditional Katakana numbering
+katakana-iroha	The marker is traditional Katakana iroha numbering
+lower-alpha	The marker is lower-alpha (a, b, c, d, e, etc.)
+lower-greek	The marker is lower-greek
+lower-latin	The marker is lower-latin (a, b, c, d, e, etc.)
+lower-roman	The marker is lower-roman (i, ii, iii, iv, v, etc.)
+none	No marker is shown
+square	The marker is a square
+upper-alpha	The marker is upper-alpha (A, B, C, D, E, etc.)
+upper-greek	The marker is upper-greek
+upper-latin	The marker is upper-latin (A, B, C, D, E, etc.)
+upper-roman	The marker is upper-roman (I, II, III, IV, V, etc.)
+
+            {DISPLAY}
+
+ display citados
+
+none: como se o elemento não estivesse na tela
+
+block: elemento comporta toda linha. medidas ajustáveis
+
+inline: o próximo elemento continua na mesma linha. medidas não ajustáveis
+
+inline-block: continua na mesma linha. ajustável
+
+**não se pode colocar elemento block em um parágrafo pois isso quebra o fluxo dentro desse elemento
+  29/09/2021
+
+
+          {overflow}
+
+ quando o conteúdo transborda o elemento, com ele pode-se colocar a barra de rolagem ( eixo X e/ou Y).
+
+VALORES
+
+visible: o conteúdo apenas é visível "vazando" o container
+
+scroll: add bara de rolagem x e y
+
+auto: só na direção onde precisa
+
+*pode-se ajustar apenas um eixo por vez (x ou y)
+
+         {ALINHAMENTO HORIZONTAL}
+          permite que o elemento seja movimentado e alinhado de um lado pra outro.
+geralmente usa-se: 
+margin (normal, left ou right).
+
+*elementos com display inline ou inline-block não se movimentam quando aplica-se essa função. é possível alterar o tipo do display para block.
+**da pra colocar esse (inline(-block))elemento dentro de uma div e alinha-lo com text-align 
+              POSITION:
+Essa propriedade serve pra poder mudar o elemento de posição.
+static: segue o posicionamento padrão do display 
+relative: tem o posicionamento padrão (static) como base podendo ser movimentado a partir desse lugar de partida. não altera a posição dos demais elementos
+absolute:elementos com essa característica "não são vistos" pelos outros elementos, pois não tem posição fixa.
+a referencia de posicionamento fica como sendo as margens do elemento pai (avó, bisavó...), desde que esse não tenha um posicionamento static, nesse caso o elemento com 'position absolute' alinha-se com o body.
+position fixed:
+se posiciona em relação a viewport, mantendo smp o posicionamento, independente de movimentações da janela e da relação com o elemento pai 
+position stick:
+ seu posicionamento padrão é respeitado pelos outros elementos, pode se posicionar em relação a viewport ("grudar"). relaciona-se com o elemento pai.
+float: propriedade que tem a capacidade de fazer com que o elemento flutue horizontalmente com os valores para o lado direito (right) ou esquerdo (left)
+  
+
+
+pode-se alterar a altura de um elemento por alguns caminhos:
+
+line-height: da pra ajustar a altura usando as unidades de medidas, mas para um posicionamento específico é necessário saber as dimensões do pai
+
+'position: absolute;' se relaciona com o elemento pai apenas se não for "static" (pode subir até o 'body') podendo ser posicionado em relação ao ascendente. pode ser necessário usar o trasnform: no caso pode add o translate dentro dessa propriedade pra terminar ajustar os eixos. 
+
+padding: só ajustar as dimensões com os diferentes tipos de unidade de medidas. a desvantagem é q é mais dificil definir as medidas do elemento.
+
+
+             {media queries}
+
+nessa aula foi tratado sobre as dimensões do site em aparelhos com tamanhos diferentes. geralmente usa-se algumas propriedades diferentes para rodar diferentes dispositivos. desenvolve-se o site pra algum formato (desktop, mobile..) e coloca-se ajustes para outros formatos na @media.
+ 
+ajuste pode ser feito por meio da propriedade CSS:
+
+@media screen and (max (ou min) -width X px) { ~~~~~~~~~~~}
+
+aqui se trabalha com o numero de px da tela, onde a partir do valor definido as propriedades se comportam da forma estabelecida dentro da propriedade.
+
+*é possível utilizar mais de um no mesmo projeto 
+*o desenvolvimento padrão geralmente é mobile, dps desktop e outros formatos
+
+                 {formulario 1,2 }
+form é a tag para comunicação do front-end com o back-and. há dois valores que podem ser utilizados como métodos (method) de busca
+
+get= mostra na barra url e tem limite de 255 caracteres. +rapido
+ou
+post= não  mostra na url e sem limite de caracteres. + seguro
+
+
+action= é onde os dados inseridos irão buscar. o 'endereço'
+
+a barra de busca é criada através da tag imput que tem um tipo (type) e um nome (name)
+os tipos de texto (text) e envio (submit) são os mais utilizados (e apresentados nessa aula)
+              
+                {input}
+ input são os tipos de entrada que se pode colocar nos formulários, o esquema é:
+
+~~~~~~input type="tipo aqui" name="nome aqui" value="se houver valor"~~~~
+
+
+**há inputs que não necessitam de nome
+
+tipos: text (texto), submit (enviar), password (senha), checkbox (quadradin de checagem), radio (bolinha p checar), reset.
+
+
+
+
+**no checkbox, quando há mais de uma opção desta é possível add um valor as tags pra poder diferencia-las 
+
+*** radio em diferentes tags com a mesma estrutura (nome) só possibilita a seleção de uma opção, pra começar já com um preenchido é só colocar o valor checked
+
+**submit e reset são exemplos de input que não precisam de nome. colocando algum value na tag é possivel mudar a nomeclatura do botão.  
+
+                      {select}
+
+
+select é uma tag que precisa apenas de nome (name). é uma dropbox onde vc pode escolher uma ou mais opções da caixa. por meio da tag option os valores são apresentados.
+
+~option value='aqui o valor'~ o texto aqui ~ /option~
+
+
+
+*pra selecionar uma opção como padrão basta add o atributo selected na tag option pra abrir a pag com essa opção
+
+**dentro da tag select adicionando o atributo 'size'  há a opção de selecionar um tamanho para o dropbox que será mostrado na tela.
+
+***também dentro da tag select é possível add o atributo multiple para poder escolher mais de uma opção.
